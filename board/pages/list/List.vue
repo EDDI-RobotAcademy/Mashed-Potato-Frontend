@@ -1,6 +1,6 @@
 <template>
     <v-container class="dark-background">
-        <h2 class="centered-title">Review List</h2>
+        <h2 class="centered-title">Review List</h2>
         <v-row>
             <v-col cols="12">
                 <v-card class="neon-card">
