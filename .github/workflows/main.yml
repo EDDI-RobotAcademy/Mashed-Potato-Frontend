@@ -31,13 +31,13 @@ jobs:
   deploy:
     name: Deploy to Production
     needs: build
-    runs-on: [ self-hosted, deploy-mashed_potato-nuxt-frontend ]
+    runs-on: [ self-hosted, deploy-nuxt-frontend ]
     steps:
       - name: Deploy to Production
         run: |
           echo "ready for deploy"
 
-          cd /home/ec2-user/nuxt/frontend
+          cd /home/ec2-user/mashed_potato/nuxt/frontend
           docker-compose down
 
           echo ${{ secrets.GHCR_TOKEN }} | docker login ghcr.io -u ${{ secrets.REAL_ACTOR }} --password-stdin
