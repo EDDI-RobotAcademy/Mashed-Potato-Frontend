@@ -31,7 +31,7 @@ jobs:
   deploy:
     name: Deploy to Production
     needs: build
-    runs-on: [ self-hosted, deploy-nuxt-frontend ]
+    runs-on: [ self-hosted, deploy-mashed_potato-nuxt-frontend ]
     steps:
       - name: Deploy to Production
         run: |
