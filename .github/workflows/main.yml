@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  DOCKER_IMAGE: ghcr.io/${{ github.actor }}/frontend-deploy-nuxt:latest
+  DOCKER_IMAGE: ghcr.io/${{ REAL_ACTOR }}/frontend-deploy-nuxt:latest
 
 jobs:
   build:
